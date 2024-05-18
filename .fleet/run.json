@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "run",
+            "dependsOn": ["build"],
+            "program": "$PROJECT_DIR$/a.out",
+        },
+        {
+            "type": "command",
+            "name": "build",
+            "program": "/usr/bin/zig",
+            "args": ["c++", "$PROJECT_DIR$/main.cpp"],
+
+        },
+    ]
+}
